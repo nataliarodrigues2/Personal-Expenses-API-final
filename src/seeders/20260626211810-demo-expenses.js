@@ -4,7 +4,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Expenses', [
       {
-        descricao: 'Almoço',
+        description: 'Almoço',
         valor: 35.90,
         data: '2026-06-01',
         status: 'PAGA',
@@ -14,7 +14,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        descricao: 'Uber',
+        description: 'Uber',
         valor: 25.00,
         data: '2026-06-02',
         status: 'PAGA',
@@ -24,7 +24,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        descricao: 'Farmácia',
+        description: 'Farmácia',
         valor: 80.00,
         data: '2026-06-03',
         status: 'PENDENTE',
