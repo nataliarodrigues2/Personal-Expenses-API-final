@@ -50,7 +50,7 @@ async function getAllExpenses(userId, filters) {
   if (filters.valueMin || filters.valueMax) {
     where.value = {}
     if (filters.valueMin) where.value[Op.gte] = filters.valueMin
-    if (filters.valueMax) where.value[Op.lte] = filters.valorMax
+    if (filters.valueMax) where.value[Op.lte] = filters.valueMax
   }
 
   return await Expense.findAll({

@@ -9,15 +9,15 @@ module.exports = {
         autoIncrement: true,
         allowNull: false
       },
-      descricao: {
+      description: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      valor: {
+      value: {
         type: Sequelize.DECIMAL(10, 2),
         allowNull: false
       },
-      data: {
+      date: {
         type: Sequelize.DATEONLY,
         allowNull: false
       },
@@ -26,7 +26,7 @@ module.exports = {
         allowNull: false,
         defaultValue: 'PENDENTE'
       },
-      categoriaId: {
+      categoryId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -34,7 +34,7 @@ module.exports = {
           key: 'id'
         }
       },
-      usuarioId: {
+      userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
